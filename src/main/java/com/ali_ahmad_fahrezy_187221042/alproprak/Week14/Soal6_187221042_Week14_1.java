@@ -4,20 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Program Soal 6 Minggu 14-1
+ * @author  Ali Ahmad Fahrezy
+ * @NIM     187221042
+ *
+ * @param n Nilai input
+ */
 public class Soal6_187221042_Week14_1 {
 
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Program Soal 1 ALPRAK I1
-        // Ali Ahmad Fahrezy
-        // 187221042
-        //
-        // n: Nilai input
-        int n;
+
+        System.out.println("Soal Nomor 6 Minggu 14 \"List Faktor Prima Suatu Integer\"");
 
         System.out.print("Input nilai integer yang ingin dicari faktornya: ");
-        n = input.nextInt();
+        int n = input.nextInt();
 
         List<Integer> r = dispPrimeFactor(n, 1, new ArrayList<>());
 
@@ -28,8 +31,17 @@ public class Soal6_187221042_Week14_1 {
         System.out.println(r.get(r.size() - 1 ));
     }
 
+    /**
+     * Fungsi untuk mendapatkan faktor prima dari suatu integer
+     *
+     * @param n Input
+     * @param i Looping
+     * @param r List rekursif
+     *
+     * @return List faktor prima
+     */
     public static List<Integer> dispPrimeFactor(int n, int i, List<Integer> r) {
-        // i: Looping
+
         if (i <= n / 2) {
             if (n % i == 0 && Soal5_187221042_Week14_1.numFactor(i, 1) == 2) {
 

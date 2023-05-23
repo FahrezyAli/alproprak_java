@@ -23,7 +23,7 @@ public class Soal1_187221042_Week12_1 {
 
     public static void main(String[] args) {
 
-        System.out.println("Soal Nomor 1 Minggu 11 \"Sortir dua array kedalam satu array\"");
+        System.out.println("Soal Nomor 1 Minggu 12 \"Sortir dua array kedalam satu array\"");
 
         int[] x = new int[5];
         int[] y = new int[5];
@@ -32,7 +32,7 @@ public class Soal1_187221042_Week12_1 {
         int a = 0;
 
         //Proses input array X
-        while (a != 5) {
+        while (a < 5) {
             System.out.print("Input nilai ke " + (a + 1) + " untuk data X: ");
             x[a] = input.nextInt();
             z[a] = x[a];
@@ -41,7 +41,7 @@ public class Soal1_187221042_Week12_1 {
         a = 0;
 
         //Proses input array Y
-        while (a != 5) {
+        while (a < 5) {
             System.out.print("Input nilai ke " + (a + 1) + " untuk data Y: ");
             y[a] = input.nextInt();
             z[a + 5] = y[a];
@@ -50,9 +50,9 @@ public class Soal1_187221042_Week12_1 {
         a = 0;
 
         //Proses sortir data Z
-        while (a != 9) {
+        while (a < 9) {
             int b = a + 1;
-            while (b != 10) {
+            while (b < 10) {
                 if (z[a] > z[b]) {
 
                     //JIka sebuah data z[i] lebih besar daripada seluruh angka sisa dari array (awal sampai akhir), maka, dengan looping ini data tersebut akan dipindahkan hingga sesuai dengan urutan yang benar
@@ -66,7 +66,7 @@ public class Soal1_187221042_Week12_1 {
         }
         a = 0;
         System.out.print("Array yang sudah berhasil diurut adalah: ");
-        while (a != 9) {
+        while (a < 9) {
             System.out.print(z[a] + ", ");
             a++;
         }

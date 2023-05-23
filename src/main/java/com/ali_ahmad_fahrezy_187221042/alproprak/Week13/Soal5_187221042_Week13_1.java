@@ -20,6 +20,8 @@ public class Soal5_187221042_Week13_1 {
 
     public static void main(String[] args) {
 
+        System.out.println("Soal Nomor 5 Minggu 13 \"List index angka terbesar\"");
+
         System.out.print("Input ukuran array yang diinginkan: ");
         int n = input.nextInt();
 
@@ -38,11 +40,11 @@ public class Soal5_187221042_Week13_1 {
         if (r.size() == 1) {
             System.out.println(r.get(0));
         } else {
-            for (int i = 0; i <= maxIndex(x, n).size() - 1; i++) {
-                if (i < maxIndex(x, n).size() - 1) {
-                    System.out.print(maxIndex(x, n).get(i) + ", ");
+            for (int i = 0; i <= r.size() - 1; i++) {
+                if (i < r.size() - 1) {
+                    System.out.print(r.get(i) + ", ");
                 } else {
-                    System.out.println("dan " + maxIndex(x, n).get(i));
+                    System.out.println("dan " + r.get(i));
                 }
             }
         }

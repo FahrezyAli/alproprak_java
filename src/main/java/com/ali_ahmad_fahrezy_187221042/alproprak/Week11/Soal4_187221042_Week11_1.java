@@ -21,6 +21,9 @@ public class Soal4_187221042_Week11_1  {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
+
+        System.out.println("Soal Nomor 4 Minggu 11 \"Tanggal Palindrome\"");
+
         String[] nb = new String[] {"januari", "februari", "maret", "april", "mei", "juni", "juli", "agustus", "september", "oktober", "november", "desember"};
 
         int ib;
@@ -49,10 +52,11 @@ public class Soal4_187221042_Week11_1  {
         }
 
         String sp = stg + sib + sth;
-        String sr = "";
+        StringBuilder build = new StringBuilder();
         for (int i = 0; i < sp.length(); i++) {
-            sr = sp.charAt(i) + sr;
+            build.append(sp.charAt(i));
         }
+        String sr = build.toString();
 
         System.out.println("Asli: " + sp);
         System.out.println("Reverse: " + sr);

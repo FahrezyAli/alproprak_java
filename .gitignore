@@ -28,6 +28,3 @@ replay_pid*
 
 #Editor Config
 .editorconfig
-
-#Java Version
-.java-version

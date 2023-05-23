@@ -3,9 +3,9 @@ package com.ali_ahmad_fahrezy_187221042.alproprak.Week14;
 import java.util.Scanner;
 
 /**
- * Program Soal 1 Week 14-1
- * @author Ali Ahmad Fahrezy
- * @NIM 187221042
+ * Program Soal 2 Week 14-1
+ * @author  Ali Ahmad Fahrezy
+ * @NIM     187221042
  *
  * @param n Nilai input
  */
@@ -15,14 +15,26 @@ public class Soal2_187221042_Week14_1 {
 
     public static void main(String[] args) {
 
-        int n;
+        System.out.println("Soal Nomor 2 Minggu 14 \"Konversi Integer ke Binari\"");
 
         System.out.print("Input nilai integer yang ingin diubah ke dalam binari: ");
-        n = input.nextInt();
+        int n = input.nextInt();
 
         System.out.println("Binari dari nilai integer tersebut adalah: " + convertBin(n));
     }
 
+    /**
+     * Fungsi untuk konversi nilai integer ke string binari
+     *
+     * @param n Nilai input
+     *
+     * <p><b>Other Parameters:</b></p>
+     * <ul>
+     * <li><b>b</b> String binari</li>
+     * </ul>
+     *
+     * @return String binari dari input
+     */
     public static String convertBin(int n) {
         // b: Nilai binari
         String b = "";

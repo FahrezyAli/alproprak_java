@@ -17,6 +17,8 @@ public class Soal1_187221042_Week13_1 {
 
     public static void main(String[] args) {
 
+        System.out.println("Soal Nomor 1 Minggu 13 \"Modus dari array\"");
+
         System.out.print("Input ukuran array yang diinginkan: ");
         int n = input.nextInt();
 

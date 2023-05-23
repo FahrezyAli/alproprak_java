@@ -15,10 +15,10 @@ public class Soal1_187221042_Week14_1 {
 
     public static void main(String[] args) {
 
-        int n;
+        System.out.println("Soal Nomor 1 Minggu 14 \"Digit Terbesar dari suatu Integer\"");
 
         System.out.print("Input nilai integer yang ingin dicari digit terbesar-nya: ");
-        n = input.nextInt();
+        int n = input.nextInt();
 
         System.out.println("Digit terbesar dari array tersebut adalah : " + max(n));
     }

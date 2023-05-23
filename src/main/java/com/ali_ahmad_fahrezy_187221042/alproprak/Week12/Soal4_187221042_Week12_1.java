@@ -18,6 +18,8 @@ public class Soal4_187221042_Week12_1 {
 
     public static void main(String[] args) {
 
+        System.out.println("Soal Nomor 4 Minggu 12 \"Deret Fibonacci\"");
+
         // Proses input
         System.out.print("Input ukuran deret Fibonacci: ");
         int n = input.nextInt();
@@ -31,7 +33,7 @@ public class Soal4_187221042_Week12_1 {
 
         // Karena nilai f[0] dan f[1] telah diisi pengguna, maka nilai yang akan dicari deret fibonacci nya dimulai dari f[2], menjelaskan mengapa i = 2
         int i = 2;
-        while (i != n) {
+        while (i < n) {
 
             // Nilai fibonacci f[i] adalah penjumlahan nilai f[i - 1] dan f[i - 2]
             f[i] = f[i - 2] + f[i - 1];
@@ -41,7 +43,7 @@ public class Soal4_187221042_Week12_1 {
         // Proses Output
         System.out.print("Deret Fibonacci: ");
         i = 0;
-        while (i != n - 1) {
+        while (i < n - 1) {
             System.out.print(Integer.toString(f[i]) + ", ");
             i++;
         }

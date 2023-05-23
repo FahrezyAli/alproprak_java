@@ -42,26 +42,25 @@ import com.ali_ahmad_fahrezy_187221042.alproprak.Week9.Soal4_187221042_Week9_1;
  */
 public final class App {
 
+    private static Scanner input = new Scanner(System.in);
     /**
      * Says hello to the world.
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
         System.out.println("Hello World!");
-
+        System.out.println("<=======================================>");
         getSoal(getIndex(), args);
     }
 
     public static int getIndex() {
-        Scanner input = new Scanner(System.in);
-
         System.out.print("Soal berapa yang ingin di run? Input 0 untuk exit: ");
 
         return input.nextInt();
     }
 
     public static void getSoal(int index, String[] args) {
-        System.out.println("");
+        System.out.println("<=======================================>");
         switch (index) {
             case 0: break;
 
@@ -110,7 +109,7 @@ public final class App {
     }
 
     public static void wrongIndex(int index, String[] args) {
-        System.out.println("Soal dengan index " + index + " tidak ditemukan!\nPastikan format index berupa 'minggu' dan 'nomor soal' tanpa spasi.\nContoh: Soal4_187221042_Minggu8_1 = 84");
+        System.out.println("Soal dengan index " + index + " tidak ditemukan!\nPastikan format index berupa 'minggu' dan 'nomor soal' tanpa spasi.\nContoh: Soal4_187221042_Minggu8_1 = 84\n");
         getSoal(getIndex(), args);
     }
 }

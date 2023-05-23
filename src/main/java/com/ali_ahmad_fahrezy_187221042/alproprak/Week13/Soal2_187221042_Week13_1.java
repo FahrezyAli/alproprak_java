@@ -17,6 +17,8 @@ public class Soal2_187221042_Week13_1 {
 
     public static void main(String[] args) {
 
+        System.out.println("Soal Nomor 2 Minggu 13 \"Frekuensi Modus Terbesar\"");
+
         System.out.print("Input ukuran array yang diinginkan: ");
         int n = input.nextInt();
 
@@ -29,7 +31,7 @@ public class Soal2_187221042_Week13_1 {
         }
 
         // Output
-        System.out.println("Frekuensi terbesar dari array tersebut adalah " + maxFreq(x, n));
+        System.out.println("Frekuensi modus terbesar dari array tersebut adalah " + maxFreq(x, n));
     }
 
     /**

@@ -16,6 +16,8 @@ public class Soal3_187221042_Week13_1 {
 
     public static void main(String[] args) {
 
+        System.out.println("Soal Nomor 3 Minggu 13 \"Median Array\"");
+
         System.out.print("Input ukuran array yang diinginkan: ");
         int n = input.nextInt();
 

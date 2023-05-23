@@ -22,14 +22,16 @@ public class Soal3_187221042_Week12_1 {
 
     public static void main(String[] args) {
 
+        System.out.println("Soal Nomor 3 Minggu 12 \"Array Ascending dengan Jumlah terbesar\"");
+
         System.out.print("Input ukuran array: ");
         int n = input.nextInt();
         int[] x = new int[n];
 
         // Proses input nilai array x
         int i = 0;
-        while (i != n) {
-            System.out.println("Input nilai ke " + (i + 1) + ": ");
+        while (i < n) {
+            System.out.print("Input nilai ke " + (i + 1) + ": ");
             x[i] = input.nextInt();
             i++;
         }
@@ -40,7 +42,7 @@ public class Soal3_187221042_Week12_1 {
         int[] t = new int[2];
 
         i = 0;
-        while (i != 2) {
+        while (i < 2) {
             s[i] = 0;
             l[i] = 0;
             t[i] = 0;
@@ -49,13 +51,13 @@ public class Soal3_187221042_Week12_1 {
 
         boolean c = false;
         i = 0;
-        while (i != n) {
+        while (i < n) {
             if (i == 0) {
 
                 // Jika i = 0, maka deret baru saja dimulai sehingga panjang deret (l[0]) adalah 1
                 l[0] = 1;
             } else {
-                if (x[i] >= x[i - 1]) {
+                if (x[i] > x[i - 1]) {
                     if (c) {
 
                         // Jika c sudah true, maka awal index tidak diambil lagi agar nilai nya tidak tertimpa dan nilai total terus ditambahkan
@@ -94,16 +96,16 @@ public class Soal3_187221042_Week12_1 {
         int e = s[1] + l[1];
 
         // Proses output
-        System.out.print("Array bilangan ascending berurutan terpanjang: ");
-        if (l[1] == 1) {
+        System.out.print("Array bilangan ascending berurutan dengan jumlah terbesar: ");
+        if (l[1] == 0) {
             System.out.println("Tidak ada");
+        } else {
+            i = s[1];
+            while (i < e) {
+                System.out.print(x[i] + " ");
+                i++;
+            }
+            System.out.println("(" + t[1] + ")");
         }
-
-        i = s[1];
-        while (i != e) {
-            System.out.print(x[i] + " ");
-            i++;
-        }
-        System.out.println("(" + t[1] + ")");
     }
 }

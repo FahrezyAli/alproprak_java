@@ -20,6 +20,8 @@ public class Soal4_187221042_Week13_1 {
 
     public static void main(String[] args) {
 
+        System.out.println("Soal Nomor 4 Minggu 13 \"Rotasi array\"");
+
         System.out.print("Input ukuran array yang diinginkan: ");
         int n = input.nextInt();
 

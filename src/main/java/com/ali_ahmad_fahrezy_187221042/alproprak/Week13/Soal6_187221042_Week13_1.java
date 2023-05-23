@@ -10,11 +10,14 @@ import java.util.Scanner;
  * @param n Ukuran array
  * @param i Looping
  * @param x Array
+ * @param r Variabel bantu output
  */
 public class Soal6_187221042_Week13_1 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
+
+        System.out.println("Soal Nomor 6 Minggu 13 \"Mengurangi Array dengan Nilai Array Terkecil\"");
 
         System.out.print("Input ukuran array yang diinginkan: ");
         int n = input.nextInt();
@@ -27,12 +30,14 @@ public class Soal6_187221042_Week13_1 {
             x[i] = input.nextInt();
         }
 
+        int[] r = kurangNilaiMin(x, n);
+
         // Output
         System.out.print("Array yang telah dikurangi dengan nilai terkecil adalah: [");
         for (int i = 0; i <= n - 2; i++) {
-            System.out.print(kurangNilaiMin(x, n)[i] + " ");
+            System.out.print(r[i] + " ");
         }
-        System.out.println(kurangNilaiMin(x, n)[n - 1] + "]");
+        System.out.println(r[n - 1] + "]");
     }
 
     /**

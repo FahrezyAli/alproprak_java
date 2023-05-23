@@ -20,8 +20,8 @@ public class Soal3_187221042_Week11_1 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
+
         System.out.println("Soal Nomor 3 Minggu 11 \"LCIS\"");
-        int e;
 
         System.out.print("Input ukuran array: ");
         int n = input.nextInt();
@@ -48,7 +48,7 @@ public class Soal3_187221042_Week11_1 {
 
                 // Jika i = 0, maka deret baru saja dimulai sehingga panjang deret (l[0]) adalah 1
                 l[0] = 1;
-            } else if (x[i] >= x[i - 1]) {
+            } else if (x[i] > x[i - 1]) {
                 if (!c) {
                     // Karena c masih false, maka deret baru saja dimulai sehingga awal index (s[0]) bisa diambil dan c diubah menjadi true untuk menandakan bahwa awal index telah ditemukan
                     s[0] = i - 1;
@@ -71,13 +71,17 @@ public class Soal3_187221042_Week11_1 {
         }
 
         // Untuk mendapatkan index akhir dari deret naik berkelanjutan, kita dapat menghitungnya dengan menjumlahkan nilai awal index(s[1]) dengan panjang deret (l[1]), kemudian dikurangi satu karena index array dimulai dari 0
-        e = s[1] + l[1] - 1;
+        int e = s[1] + l[1] - 1;
 
         // Proses output
         System.out.print("Array bilangan ascending berurutan terpanjang: ");
-        for (int i = s[1]; i <= e; i++) {
-            System.out.print(x[i] + " ");
+        if (l[1] == 1) {
+            System.out.println("Tidak ada");
+        } else {
+            for (int i = s[1]; i <= e; i++) {
+                System.out.print(x[i] + " ");
+            }
+            System.out.println("(" + l[1] + ")");
         }
-        System.out.println("(" + l[1] + ")");
     }
 }

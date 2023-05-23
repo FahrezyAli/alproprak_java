@@ -4,20 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Program Soal 3 Minggu 14-1
+ * @author  Ali Ahmad Fahrezy
+ * @NIM     187221042
+ *
+ * @param n Nilai input
+ */
 public class Soal3_187221042_Week14_1 {
 
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Program Soal 1 ALPRAK I1
-        // Ali Ahmad Fahrezy
-        // 187221042
-        //
-        // n: Nilai input
-        int n;
+
+        System.out.println("Soal Nomor 3 Minggu 14 \"List Faktor suatu Integer\"");
 
         System.out.print("Input nilai integer yang ingin dicari faktornya: ");
-        n = input.nextInt();
+        int n = input.nextInt();
 
         List<Integer> r = dispFactor(n, 1, new ArrayList<>());
 
@@ -28,8 +31,17 @@ public class Soal3_187221042_Week14_1 {
         System.out.println(r.get(r.size() - 1));
     }
 
+    /**
+     * Fungsi untuk mendapatkan faktor faktor dari suatu integer
+     *
+     * @param n Input
+     * @param i Looping
+     * @param r r List rekursif
+     *
+     * @return List faktor faktor dari suatu integer
+     */
     public static List<Integer> dispFactor(int n, int i, List<Integer> r) {
-        // i: Looping
+
         // n / 2 karena nilai faktor tertinggi selain nilai itu sendiri adalah nilai n / 2
         if (i <= n / 2) {
             if (n % i == 0) {
