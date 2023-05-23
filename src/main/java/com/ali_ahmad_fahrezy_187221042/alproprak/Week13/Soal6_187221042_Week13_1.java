@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /**
  * Program Soal 6 Minggu 13-1
- * @author Ali Ahmad Fahrezy
- * @NIM 187221042
+ * @author  Ali Ahmad Fahrezy
+ * @NIM     187221042
  *
  * @param n Ukuran array
  * @param i Looping

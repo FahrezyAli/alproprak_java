@@ -31,7 +31,7 @@ public class Soal3_187221042_Week12_1 {
         while (i != n) {
             System.out.println("Input nilai ke " + (i + 1) + ": ");
             x[i] = input.nextInt();
-            i = i + 1;
+            i++;
         }
 
         // Memberikan nilai 0 pada s, l dan t agar tidak error
@@ -44,7 +44,7 @@ public class Soal3_187221042_Week12_1 {
             s[i] = 0;
             l[i] = 0;
             t[i] = 0;
-            i = i + 1;
+            i++;
         }
 
         boolean c = false;
@@ -69,7 +69,7 @@ public class Soal3_187221042_Week12_1 {
                     }
 
                     // Jika nilai x[i] lebih kecil daripada nilai sebelumya (x[i - 1]), maka panjang dari deret (l[0]) bertambah 1
-                    l[0] = l[0] + 1;
+                    l[0]++;
                 } else {
 
                     // Jika deret naik berkelanjutan sudah selesai (nilai x[i] tidak lebih besar daripada nilai x[i - 1]), maka panjang deret (l[0])pun di kembalikan lagi menjadi 1 agar dapat menghitung panjang deret yang lain jika ada, dan nilai total (t[0]) diubah kembali menjadi 0 agar dapat menghitung nilai total deret lain jika ada
@@ -87,7 +87,7 @@ public class Soal3_187221042_Week12_1 {
                     t[1] = t[0];
                 }
             }
-            i = i + 1;
+            i++;
         }
 
         // Untuk mendapatkan index akhir dari deret naik berkelanjutan, kita dapat menghitungnya dengan menjumlahkan nilai awal index(s[1]) dengan panjang deret (l[1])
@@ -102,7 +102,7 @@ public class Soal3_187221042_Week12_1 {
         i = s[1];
         while (i != e) {
             System.out.print(x[i] + " ");
-            i = i + 1;
+            i++;
         }
         System.out.println("(" + t[1] + ")");
     }

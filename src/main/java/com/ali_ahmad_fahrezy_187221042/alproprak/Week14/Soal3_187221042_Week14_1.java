@@ -21,8 +21,6 @@ public class Soal3_187221042_Week14_1 {
 
         List<Integer> r = dispFactor(n, 1, new ArrayList<>());
 
-        System.out.println(r.size());
-
         System.out.print("Faktor faktor dari nilai integer tersebut adalah: ");
         for (int i = 0; i <= r.size() - 2; i++) {
             System.out.print(r.get(i) + ", ");
@@ -33,7 +31,7 @@ public class Soal3_187221042_Week14_1 {
     public static List<Integer> dispFactor(int n, int i, List<Integer> r) {
         // i: Looping
         // n / 2 karena nilai faktor tertinggi selain nilai itu sendiri adalah nilai n / 2
-        if (i <= (double) n / 2) {
+        if (i <= n / 2) {
             if (n % i == 0) {
 
                 // Jika nilai i dapat membagi habis n, maka nilai i akan dioutput

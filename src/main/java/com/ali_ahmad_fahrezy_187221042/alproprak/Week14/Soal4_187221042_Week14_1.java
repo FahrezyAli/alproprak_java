@@ -16,7 +16,7 @@ public class Soal4_187221042_Week14_1 {
 
         System.out.print("Input nilai integer yang ingin dicari jumlah dari nilai faktornya: ");
         n = input.nextInt();
-        System.out.print("Jumlah dari nilai faktor dari nilai integer tersebut adalah: " + sumFactor(n, 1));
+        System.out.println("Jumlah dari nilai faktor dari nilai integer tersebut adalah: " + sumFactor(n, 1));
     }
 
     public static int sumFactor(int n, int i) {

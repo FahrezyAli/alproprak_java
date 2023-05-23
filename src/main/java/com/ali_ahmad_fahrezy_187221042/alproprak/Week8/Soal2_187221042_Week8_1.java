@@ -26,6 +26,6 @@ public class Soal2_187221042_Week8_1 {
         double t = input.nextDouble();
 
         //Output
-        System.out.println("Output: " + (a * t) / 2f);
+        System.out.println("Output: " + (a * t) / 2d);
     }
 }

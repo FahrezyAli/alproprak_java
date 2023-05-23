@@ -59,7 +59,7 @@ public class Soal2_187221042_Week13_1 {
                 if (x[i] == x[j]) {
 
                     // Jika nilai x[i] sama dengan x[j], maka counter (c) akan bertambah, kemudian nilai x[i] akan dihapus agar tidak terhitung dua kali saat nilai i berubah
-                    c = c + 1;
+                    c++;
                     x[j] = 0;
                 }
             }

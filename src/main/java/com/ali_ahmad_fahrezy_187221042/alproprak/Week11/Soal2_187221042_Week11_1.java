@@ -38,15 +38,15 @@ public class Soal2_187221042_Week11_1 {
         // Kemudian masing masing berat akan dicek apakah status-nya kurus, langsing, standard, gemuk atau obesitas, yang kemudian akan menambah total count dari status tersebut
         for (int i = 0; i <= 9; i++) {
             if (b[i] < 0.7) {
-                k = k + 1;
+                k++;
             } else if (b[i] < 1) {
-                l = l + 1;
+                l++;
             } else if (b[i] < 1.5) {
-                s = s + 1;
+                s++;
             } else if (b[i] < 2) {
-                g = g + 1;
+                g++;
             } else {
-                o = o + 1;
+                o++;
             }
         }
 

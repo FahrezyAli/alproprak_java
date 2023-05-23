@@ -34,7 +34,7 @@ public class Soal3_187221042_Week9_1 {
         int u = input.nextInt();
 
         //Menghitung ongkos kirim
-        double o = (double) b*pb/100;
+        double o = b*pb/100d;
 
         //Menghitung pertambahan harga
         double h = o + u;

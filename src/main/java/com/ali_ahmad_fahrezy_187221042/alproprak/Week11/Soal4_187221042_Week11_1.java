@@ -49,7 +49,10 @@ public class Soal4_187221042_Week11_1  {
         }
 
         String sp = stg + sib + sth;
-        String sr = new StringBuilder(sp).reverse().toString();
+        String sr = "";
+        for (int i = 0; i < sp.length(); i++) {
+            sr = sp.charAt(i) + sr;
+        }
 
         System.out.println("Asli: " + sp);
         System.out.println("Reverse: " + sr);

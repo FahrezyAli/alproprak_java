@@ -55,7 +55,7 @@ public class Soal3_187221042_Week11_1 {
                     c = true;
                 }
                 // Jika nilai x[i] lebih kecil daripada nilai sebelumya (x[i - 1]), maka panjang dari deret (l[0]) bertambah 1
-                l[0] = l[0] + 1;
+                l[0]++;
             } else {
                 // Jika deret naik berkelanjutan sudah selesai (nilai x[i] tidak lebih besar daripada nilai x[i - 1]), maka panjang deret (l[0])pun di kembalikan lagi menjadi 1 agar dapat menghitung panjang deret yang lain jika ada
                 l[0] = 1;

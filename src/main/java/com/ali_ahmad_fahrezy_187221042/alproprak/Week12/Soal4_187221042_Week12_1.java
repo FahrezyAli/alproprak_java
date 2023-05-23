@@ -35,7 +35,7 @@ public class Soal4_187221042_Week12_1 {
 
             // Nilai fibonacci f[i] adalah penjumlahan nilai f[i - 1] dan f[i - 2]
             f[i] = f[i - 2] + f[i - 1];
-            i = i + 1;
+            i++;
         }
 
         // Proses Output
@@ -43,7 +43,7 @@ public class Soal4_187221042_Week12_1 {
         i = 0;
         while (i != n - 1) {
             System.out.print(Integer.toString(f[i]) + ", ");
-            i = i + 1;
+            i++;
         }
         System.out.println(f[n - 1]);
     }

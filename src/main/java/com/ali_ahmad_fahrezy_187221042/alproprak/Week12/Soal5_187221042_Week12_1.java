@@ -22,7 +22,10 @@ public class Soal5_187221042_Week12_1 {
         String s = input.nextLine();
 
         // String r diberi string kosong ("") agar tidak error
-        String r = new StringBuilder(s).reverse().toString();
+        String r = "";
+        for (int i = 0; i < s.length(); i++) {
+            r = s.charAt(i) + r;
+        }
 
         // Proses output
         System.out.println("ASLI: " + s);

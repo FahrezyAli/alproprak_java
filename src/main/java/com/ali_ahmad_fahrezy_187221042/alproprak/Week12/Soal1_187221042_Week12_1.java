@@ -23,6 +23,8 @@ public class Soal1_187221042_Week12_1 {
 
     public static void main(String[] args) {
 
+        System.out.println("Soal Nomor 1 Minggu 11 \"Sortir dua array kedalam satu array\"");
+
         int[] x = new int[5];
         int[] y = new int[5];
         int[] z = new int[10];
@@ -34,7 +36,7 @@ public class Soal1_187221042_Week12_1 {
             System.out.print("Input nilai ke " + (a + 1) + " untuk data X: ");
             x[a] = input.nextInt();
             z[a] = x[a];
-            a = a + 1;
+            a++;
         }
         a = 0;
 
@@ -43,7 +45,7 @@ public class Soal1_187221042_Week12_1 {
             System.out.print("Input nilai ke " + (a + 1) + " untuk data Y: ");
             y[a] = input.nextInt();
             z[a + 5] = y[a];
-            a = a + 1;
+            a++;
         }
         a = 0;
 
@@ -58,15 +60,15 @@ public class Soal1_187221042_Week12_1 {
                     z[a] = z[b];
                     z[b] = temp;
                 }
-                b = b + 1;
+                b++;
             }
-            a = a + 1;
+            a++;
         }
         a = 0;
         System.out.print("Array yang sudah berhasil diurut adalah: ");
         while (a != 9) {
             System.out.print(z[a] + ", ");
-            a = a + 1;
+            a++;
         }
         System.out.println(z[9]);
     }

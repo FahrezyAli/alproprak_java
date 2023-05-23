@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @param n Ukuran array
  * @param i Looping
  * @param x Array
+ * @param r Variable bantu output
  */
 public class Soal5_187221042_Week13_1 {
 
@@ -30,13 +31,19 @@ public class Soal5_187221042_Week13_1 {
             x[i] = input.nextInt();
         }
 
+        List<Integer> r = maxIndex(x, n);
+
         //Output
         System.out.print("Index angka terbesar adalah: ");
-        for (int i = 0; i <= maxIndex(x, n).size() - 1; i++) {
-            if (i < maxIndex(x, n).size() - 1) {
-                System.out.print(maxIndex(x, n).get(i) + ", ");
-            } else {
-                System.out.println("dan " + maxIndex(x, n).get(i));
+        if (r.size() == 1) {
+            System.out.println(r.get(0));
+        } else {
+            for (int i = 0; i <= maxIndex(x, n).size() - 1; i++) {
+                if (i < maxIndex(x, n).size() - 1) {
+                    System.out.print(maxIndex(x, n).get(i) + ", ");
+                } else {
+                    System.out.println("dan " + maxIndex(x, n).get(i));
+                }
             }
         }
     }

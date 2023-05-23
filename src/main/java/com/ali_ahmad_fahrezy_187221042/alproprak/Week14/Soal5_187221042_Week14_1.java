@@ -16,7 +16,7 @@ public class Soal5_187221042_Week14_1 {
 
         System.out.print("Input nilai integer yang ingin dicari jumlah faktornya: ");
         n = input.nextInt();
-        System.out.print("Jumlah faktor dari nilai integer tersebut adalah: " + numFactor(n, 1));
+        System.out.println("Jumlah faktor dari nilai integer tersebut adalah: " + numFactor(n, 1));
     }
 
     public static int numFactor(int n, int i) {
@@ -32,7 +32,7 @@ public class Soal5_187221042_Week14_1 {
             if (n % i == 0) {
 
                 // Jika nilai i dapat membagi habis n, maka nilai i akan ditambahkan ke sum
-                j = j + 1;
+                j++;
             }
         } else {
             j = 1;

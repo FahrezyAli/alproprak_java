@@ -26,6 +26,6 @@ public class Soal3_187221042_Week8_1 {
         double b = input.nextDouble();
 
         //Output
-        System.out.println("Output: " + 1f / (a - b));
+        System.out.println("Output: " + 1d / (a - b));
     }
 }

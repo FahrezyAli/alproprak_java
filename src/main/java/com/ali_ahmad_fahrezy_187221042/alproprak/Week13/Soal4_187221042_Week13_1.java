@@ -7,11 +7,12 @@ import java.util.Scanner;
  * @author  Ali Ahmad Fahrezy
  * @NIM     187221042
  *
- * @param n Ukuran deret
- * @param r Input berapa langkah rotasi
- * @param d Input arah rotasi
- * @param i Looping
- * @param x Array
+ * @param n      Ukuran deret
+ * @param r      Input berapa langkah rotasi
+ * @param d      Input arah rotasi
+ * @param i      Looping
+ * @param x      Array
+ * @param result Variabel bantu output
  */
 public class Soal4_187221042_Week13_1 {
 
@@ -54,12 +55,14 @@ public class Soal4_187221042_Week13_1 {
             s = "kiri";
         }
 
+        int [] result = rotate(x, n, r, d);
+
         //Output
         System.out.print("Hasil rotasi " + r + " langkah ke " + s + " adalah: [");
         for (int i = 0; i <= n - 2; i++) {
-            System.out.print(rotate(x, n, r, d)[i] + " ");
+            System.out.print(result[i] + " ");
         }
-        System.out.println(rotate(x, n, r, d)[n - 1] + "]");
+        System.out.println(result[n - 1] + "]");
     }
 
     /**
@@ -123,16 +126,18 @@ public class Soal4_187221042_Week13_1 {
             t = n + r;
         }
 
-        for (int i = f; i <= t - 1 ; i++) {
+        int i = f;
+        int j = 0;
+        while (i <= t - 1) {
             if (i >= n) {
-
                 // Nilai index layer 2 tersebut di kurangi dengan nilai n untuk mengkonversi kembali ke nilai index layer 1
-                result[i - n] = x[i - n];
-
+                result[j] = x[i - n];
             } else {
 
-                result[i] = x[i];
+                result[j] = x[i];
             }
+            i++;
+            j++;
         }
 
         return result;
