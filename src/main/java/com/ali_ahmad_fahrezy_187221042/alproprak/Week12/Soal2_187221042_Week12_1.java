@@ -20,6 +20,8 @@ public class Soal2_187221042_Week12_1 {
 
     public static void main(String[] args) {
 
+        System.out.println("Soal Nomor 1 Minggu 11 \"\"");
+
         int[] x = new int[5];
 
         int a = 0;
@@ -28,7 +30,7 @@ public class Soal2_187221042_Week12_1 {
         while (a != 5) {
             System.out.print("Input nilai ke " + (a + 1) + " untuk array X: ");
             x[a] = input.nextInt();
-            a = a + 1;
+            a++;
         }
         a = 0;
 
@@ -43,13 +45,13 @@ public class Soal2_187221042_Week12_1 {
                 x[a] = x[4];
                 x[4] = temp;
             }
-            a = a + 1;
+            a++;
         }
         a = 0;
         System.out.print("Array yang sudah berhasil diurut adalah: ");
         while (a != 4) {
             System.out.print(x[a] + ", ");
-            a = a + 1;
+            a++;
         }
         System.out.println(x[4]);
     }
