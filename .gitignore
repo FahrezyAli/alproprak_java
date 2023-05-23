@@ -25,3 +25,9 @@ replay_pid*
 
 # VS Code
 .vscode/
+
+#Editor Config
+.editorconfig
+
+#Java Version
+.java-version
