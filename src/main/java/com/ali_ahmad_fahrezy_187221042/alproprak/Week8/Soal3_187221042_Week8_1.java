@@ -19,11 +19,11 @@ public class Soal3_187221042_Week8_1 {
 
         //Input a
         System.out.print("Masukkan variabel a: ");
-        float a = input.nextFloat();
+        double a = input.nextDouble();
 
         //Input b
         System.out.print("Masukkan variabel b: ");
-        float b = input.nextFloat();
+        double b = input.nextDouble();
 
         //Output
         System.out.println("Output: " + 1f / (a - b));

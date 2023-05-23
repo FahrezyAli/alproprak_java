@@ -68,18 +68,18 @@ public class Soal3_187221042_Week10_1 {
             }
 
             //Menghitung posisi x1 dengan rumus abc
-            float x1 = (float) ((-b2) - Math.sqrt(ds));
+            double x1 = (double) ((-b2) - Math.sqrt(ds));
             x1 = x1/2*a;
 
             //Menghitung posisi x2 dengan rumus abc
-            float x2 = (float) ((-b2) + Math.sqrt(ds));
+            double x2 = (double) ((-b2) + Math.sqrt(ds));
             x2 = x2/2*a;
 
             //Menghitung posisi y1 dengan memasukkan nilai x1 ke fungsi linear
-            float y1 = (d*x1+e);
+            double y1 = (d*x1+e);
 
             //Menghitung posisi y2 dengan memasukkan nilai x2 ke fungsi linear
-            float y2 = (d*x2+e);
+            double y2 = (d*x2+e);
 
             System.out.println("Posisi X1 =  " + x1 + "\nPosisi Y1 = " + y1 + "\nPosisi X2 =  " + x2 + "\nPosisi Y2 = " + y2);
         }

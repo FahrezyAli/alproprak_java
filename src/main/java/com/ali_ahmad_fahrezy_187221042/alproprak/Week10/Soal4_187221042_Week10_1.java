@@ -31,10 +31,10 @@ public class Soal4_187221042_Week10_1 {
         int sm = m * 6;
 
         //Karena dalam jam ada 12 posisi terhadap satu lingkaran 360. Maka perbandingan sudut dengan jam adalah 360/12=30. Maka setiap menit, 30 derajat berpindah.
-        float sj = (j + (m / 60f)) * 30;
+        double sj = (j + (m / 60f)) * 30;
 
         //Besaran sudut jam terhadap menit adalah nilai mutlak pengurangan sudut jam terhadap garis tegak lurus dan menit terhadap garis tegak lurus
-        float sa = Math.abs(sj - sm);
+        double sa = Math.abs(sj - sm);
 
         //Jika sudut lebih besar daripada 180, maka harus dihitung dari belakang, jadi 360 dikurang dengan sudut akhir
         if (sa > 180) {

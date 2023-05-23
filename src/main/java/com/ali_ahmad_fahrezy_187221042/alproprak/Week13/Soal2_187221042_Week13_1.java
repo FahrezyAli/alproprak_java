@@ -33,7 +33,7 @@ public class Soal2_187221042_Week13_1 {
     }
 
     /**
-     * Menghitung frekuensi modus dari suatu array
+     * Fungsi untuk Menghitung frekuensi modus dari suatu array
      *
      * @param x Array
      * @param n Ukuran array

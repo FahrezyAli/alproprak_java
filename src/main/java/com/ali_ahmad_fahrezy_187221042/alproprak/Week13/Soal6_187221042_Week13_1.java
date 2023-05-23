@@ -2,17 +2,20 @@ package com.ali_ahmad_fahrezy_187221042.alproprak.Week13;
 
 import java.util.Scanner;
 
+/**
+ * Program Soal 6 Minggu 13-1
+ * @author Ali Ahmad Fahrezy
+ * @NIM 187221042
+ *
+ * @param n Ukuran array
+ * @param i Looping
+ * @param x Array
+ */
 public class Soal6_187221042_Week13_1 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Program Soal 6 ALPRAK I1
-        // Ali Ahmad Fahrezy
-        // 187221042
-        //
-        // n: Ukuran array
-        // i: Looping
-        // x: Array
+
         System.out.print("Input ukuran array yang diinginkan: ");
         int n = input.nextInt();
 
@@ -32,9 +35,22 @@ public class Soal6_187221042_Week13_1 {
         System.out.println(kurangNilaiMin(x, n)[n - 1] + "]");
     }
 
+    /**
+     * Fungsi untuk mengurangi nilai array dengan nilai terkecil
+     *
+     * @param x Array
+     * @param n Ukuran array
+     *
+     * <p><b>Other Parameters:</b></p>
+     * <ul>
+     * <li><b>i</b> Looping</li>
+     * <li><b>m</b> Nilai minimum / terendah</li>
+     * <li><b>r</b> List resultan yang akan di return</li>
+     * </ul>
+     *
+     * @return Array dengan setiap member nya telah dikurangi dengan nilai terkecil
+     */
     public static int[] kurangNilaiMin(int[] x, int n) {
-        // i = Looping
-        // m = Nilai minimum / terendah
 
         // Kita ambil data pertama sebagai nilai maksimum sementara
         int m = x[0];

@@ -33,7 +33,7 @@ public class Soal1_187221042_Week13_1 {
     }
 
     /**
-     * Mendapatkan modus dari suatu array
+     * Fungsi untuk mendapatkan modus dari suatu array
      *
      * @param  x Array
      * @param  n Ukuran array

@@ -4,17 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Program Soal 5 Minggu 13-1
+ * @author  Ali Ahmad Fahrezy
+ * @NIM     187221042
+ *
+ * @param n Ukuran array
+ * @param i Looping
+ * @param x Array
+ */
 public class Soal5_187221042_Week13_1 {
+
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Program Soal 5 ALPRAK I1
-        // Ali Ahmad Fahrezy
-        // 187221042
-        //
-        // n: Ukuran array
-        // i: Looping
-        // x: Array
+
         System.out.print("Input ukuran array yang diinginkan: ");
         int n = input.nextInt();
 
@@ -38,13 +42,21 @@ public class Soal5_187221042_Week13_1 {
     }
 
     /**
+     * Fungsi untuk mendapatkan list index angka terbesar
      *
-     * @param x
-     * @param n
+     * @param x Array
+     * @param n Ukuran array
+     *
+     * <p><b>Other Parameters:</b></p>
+     * <ul>
+     * <li><b>i</b> Looping</li>
+     * <li><b>m</b> Nilai maksimum / tertinggi</li>
+     * <li><b>r</b> List resultan yang akan di return</li>
+     * </ul>
+     *
+     * @return List index angka terbesar
      */
     public static List<Integer> maxIndex(int[] x, int n) {
-        // i = Looping
-        // m = Nilai maksimum / tertinggi
 
         // Kita ambil data pertama sebagai nilai maksimum sementara
         int m = x[0];
@@ -63,7 +75,7 @@ public class Soal5_187221042_Week13_1 {
         for (int i = 0; i <= n - 1; i++) {
             if (x[i] == m) {
 
-                // Jika nilai x[i] ==  m, maka index (i) akan diprint out
+                // Jika nilai x[i] ==  m, maka index (i) akan dimasukkan ke list
                 r.add(i);
             }
         }

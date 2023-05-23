@@ -19,11 +19,11 @@ public class Soal2_187221042_Week8_1 {
 
         //Input alas
         System.out.print("Masukkan alas segitiga: ");
-        float a = input.nextFloat();
+        double a = input.nextDouble();
 
         //Input tinggi
         System.out.print("Masukkan tinggi segitiga: ");
-        float t = input.nextFloat();
+        double t = input.nextDouble();
 
         //Output
         System.out.println("Output: " + (a * t) / 2f);

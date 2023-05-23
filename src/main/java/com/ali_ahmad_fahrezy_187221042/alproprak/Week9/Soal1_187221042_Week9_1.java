@@ -22,19 +22,19 @@ public class Soal1_187221042_Week9_1 {
 
         //Input x
         System.out.print("Input nilai warisan yang diterima ibu dan satu anak: ");
-        float x = input.nextFloat();
+        double x = input.nextDouble();
 
         //Ibu mendapat 1/4 bagian
-        float ibu = (float) 1/4;
+        double ibu = (double) 1/4;
 
         //Sisanya adalah 3/4
-        float sisa = 1 - ibu;
+        double sisa = 1 - ibu;
 
         //Satu anak mendapatkan 1/3 dari sisa tersebut
-        float anak = (float) 1/3*sisa;
+        double anak = (double) 1/3*sisa;
 
         //Kalkulasi warisan
-        float warisan = x/(ibu + anak);
+        double warisan = x/(ibu + anak);
 
         //Output
         System.out.println("Total warisan: " + warisan);

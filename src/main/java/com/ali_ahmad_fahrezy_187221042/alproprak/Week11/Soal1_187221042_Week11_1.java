@@ -24,25 +24,25 @@ public class Soal1_187221042_Week11_1 {
 
         System.out.println("Soal Nomor 1 Minggu 11 \"Berat Bebek\"");
 
-        float[] b = new float[10];
-        float sum = 0;
-        float svar = 0;
+        double[] b = new double[10];
+        double sum = 0;
+        double svar = 0;
 
         // Kode ini berfungsi untuk looping input 8 berat bebek yang kemudian sekaligus dijumlahkan kedalam variabel sum
         for (int i = 0; i < 8; i++) {
             System.out.print("Inputlah berat bebek ke " + (i + 1) + ": ");
-            b[i] = input.nextFloat();
+            b[i] = input.nextDouble();
             sum = sum + b[i];
         }
 
         System.out.print("Inputlah mean dari berat 10 bebek: ");
-        float m = input.nextFloat();
+        double m = input.nextDouble();
 
         System.out.print("Inputlah selisih antara 2 bebek yang hilang: ");
-        float s = input.nextFloat();
+        double s = input.nextDouble();
 
         // Dengan menggukanan rumus mean sebagai dasar. Dibentuk rumus yang digunakan untuk mencari jumlah 2 berat bebek yang hilang
-        float j = -sum + m * 10;
+        double j = -sum + m * 10;
 
         // Kemudian kita dapat menggunakan substitusi dengan jumlah dan selisih 2 bebek yang hilang untuk menemukan berat masing masing bebek tersebut
         b[8] = (j - s) / 2;
@@ -55,7 +55,7 @@ public class Soal1_187221042_Week11_1 {
         }
 
         // Menghitung variance, dan kemudian dioutput
-        float var = svar / 10;
+        double var = svar / 10;
         System.out.println("Variance 10 bebek adalah: " + var);
     }
 }

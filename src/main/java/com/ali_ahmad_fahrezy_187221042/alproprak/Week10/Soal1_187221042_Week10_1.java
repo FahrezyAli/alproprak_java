@@ -28,38 +28,38 @@ public class Soal1_187221042_Week10_1 {
         System.out.println("Soal Nomor 1 Minggu 10 \"Melihat Hubungan Antara 2 Lingkaran\"");
 
         System.out.print("Inputlah nilai sumbu x titik pusat lingkaran pertama: ");
-        float x1 = input.nextFloat();
+        double x1 = input.nextDouble();
 
         System.out.print("Inputlah nilai sumbu y titik pusat lingkaran pertama: ");
-        float y1 = input.nextFloat();
+        double y1 = input.nextDouble();
 
         System.out.print("Inputlah jari-jari lingkaran pertama: ");
-        float r1 = input.nextFloat();
+        double r1 = input.nextDouble();
 
         System.out.print("Inputlah nilai sumbu x titik pusat lingkaran kedua: ");
-        float x2 = input.nextFloat();
+        double x2 = input.nextDouble();
 
         System.out.print("Inputlah nilai sumbu y titik pusat lingkaran kedua: ");
-        float y2 = input.nextFloat();
+        double y2 = input.nextDouble();
 
         System.out.print("Inputlah jari-jari lingkaran pertama: ");
-        float r2 = input.nextFloat();
+        double r2 = input.nextDouble();
 
 
         //Menghitung nilai jarak alas atau jarak antara x1 dan x2
-        float a = Math.abs(x1 - x2);
+        double a = Math.abs(x1 - x2);
 
         //Menghitung nilai tinggi atau jarak antara y1 dan y2
-        float t = Math.abs(y1 - y2);
+        double t = Math.abs(y1 - y2);
 
         //Menghitung jarak antara kedua lingkaran dengan menggunakan teorama pythagoras
         double d = Math.sqrt((a * a) + (t * t));
 
         //Mengambil nilai jari-jari terbesar antara kedua lingkaran
-        float rb = Math.max(r1, r2);
+        double rb = Math.max(r1, r2);
 
         //Mengambil nilai jari-jari terkecil antara kedua lingkaran
-        float rk = Math.min(r1, r2);
+        double rk = Math.min(r1, r2);
 
         //Posisi dasar adalah P1, yaitu sama sekali tidak menyentuh
         String h = "P1";

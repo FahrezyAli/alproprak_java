@@ -2,20 +2,23 @@ package com.ali_ahmad_fahrezy_187221042.alproprak.Week13;
 
 import java.util.Scanner;
 
+/**
+ * Program Soal 4 Minggu 13-1
+ * @author  Ali Ahmad Fahrezy
+ * @NIM     187221042
+ *
+ * @param n Ukuran deret
+ * @param r Input berapa langkah rotasi
+ * @param d Input arah rotasi
+ * @param i Looping
+ * @param x Array
+ */
 public class Soal4_187221042_Week13_1 {
 
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Program Soal 4 ALPRAK I1
-        // Ali Ahmad Fahrezy
-        // 187221042
-        //
-        // n: Ukuran deret
-        // r: Input berapa langkah rotasi
-        // d: Input arah rotasi
-        // i: Looping
-        // x: Array
+
         System.out.print("Input ukuran array yang diinginkan: ");
         int n = input.nextInt();
 
@@ -60,17 +63,25 @@ public class Soal4_187221042_Week13_1 {
     }
 
     /**
+     * Fungsi untuk merotasi suatu array dengan langkah dan arah tertentu
      *
-     * @param x
-     * @param n
-     * @param r
-     * @param d
+     * @param x Array yang ingin dirotasi
+     * @param n Ukuran array
+     * @param r Langkah rotasi
+     * @param d Arah rotasi
+     *
+     * <p><b>Other Parameters:</b></p>
+     * <ul>
+     * <li><b>i</b>      Looping</li>
+     * <li><b>f</b>      Nilai awal index (from)</li>
+     * <li><b>t</b>      Nilai akhir index (to)</li>
+     * <li><b>result</b> Array resultan yang akan di return</li>
+     * </ul>
+     *
+     * @return Array yang sudah dirotasi
      */
     public static int[] rotate(int[] x, int n, int r, int d) {
-        // i = Looping
-        // f = Nilai awal index (from)
-        // t = Nilai akhir index (to)
-        // s = String untuk menyimpan arah untuk keperluan output
+
         int f;
         int t;
 
@@ -115,7 +126,7 @@ public class Soal4_187221042_Week13_1 {
         for (int i = f; i <= t - 1 ; i++) {
             if (i >= n) {
 
-                // Nilai index layer 2 tersebut di kurangi dengan nilia n untuk mengkonversi kembali ke nilai index layer 1
+                // Nilai index layer 2 tersebut di kurangi dengan nilai n untuk mengkonversi kembali ke nilai index layer 1
                 result[i - n] = x[i - n];
 
             } else {

@@ -32,14 +32,14 @@ public class Soal3_187221042_Week13_1 {
     }
 
     /**
-     * Menghitung median dari suatu array
+     * Fungsi untuk Menghitung median dari suatu array
      *
      * @param x Array
      * @param n Ukuran Array
      *
      * <p><b>Other Parameters:</b></p>
      * <ul>
-     * <li><l>f</b> Lokasi median</li>
+     * <li><b>f</b> Lokasi median</li>
      * <li><b>m</b> Nilai median</li>
      * </ul>
      *
@@ -48,7 +48,7 @@ public class Soal3_187221042_Week13_1 {
     public static double median(int[] x, int n) {
 
         // Lokasi median adalah panjang data (n) dibagi 2. Namun, karena index array dimulai dari 0, maka nilai n harus dikurangi dengan 1 terlebih dahulu
-        float m;
+        double m;
 
         int l = (n - 1) / 2;
 

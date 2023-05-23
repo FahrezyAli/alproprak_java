@@ -30,7 +30,7 @@ public class Soal4_187221042_Week9_1 {
         int mo = input.nextInt();
 
         System.out.print("Input kecepatan bus dalam km/jam: ");
-        float v = input.nextFloat();
+        double v = input.nextDouble();
 
         System.out.print("Input jarak yang akan ditempuh dalam km: ");
         int s = input.nextInt();

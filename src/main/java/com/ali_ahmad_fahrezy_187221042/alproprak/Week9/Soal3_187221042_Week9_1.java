@@ -34,13 +34,13 @@ public class Soal3_187221042_Week9_1 {
         int u = input.nextInt();
 
         //Menghitung ongkos kirim
-        float o = (float) b*pb/100;
+        double o = (double) b*pb/100;
 
         //Menghitung pertambahan harga
-        float h = o + u;
+        double h = o + u;
 
         //Menghitung persentase pertambahan harga
-        float pj = h/b*100;
+        double pj = h/b*100;
 
         //Output
         System.out.println("Persentase pertambahan harga: " + pj + "%");

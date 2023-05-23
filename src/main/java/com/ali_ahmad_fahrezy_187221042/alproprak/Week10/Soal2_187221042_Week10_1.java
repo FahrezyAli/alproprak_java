@@ -38,7 +38,7 @@ public class Soal2_187221042_Week10_1 {
         }
 
         //Jika waktu per jarak melebihi 2 menit, maka harga akan bertambah 1000 per menit tambahan
-        if ((float) w / j > 2) {
+        if ((double) w / j > 2) {
             h = h + ((w % j) * 1000);
         }
 
