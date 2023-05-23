@@ -53,7 +53,7 @@ public class Soal4_187221042_Week11_1  {
 
         String sp = stg + sib + sth;
         StringBuilder build = new StringBuilder();
-        for (int i = 0; i < sp.length(); i++) {
+        for (int i = sp.length() - 1; i >= 0; i--) {
             build.append(sp.charAt(i));
         }
         String sr = build.toString();

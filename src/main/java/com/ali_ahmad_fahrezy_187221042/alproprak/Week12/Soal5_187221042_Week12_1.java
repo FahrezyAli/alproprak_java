@@ -21,11 +21,11 @@ public class Soal5_187221042_Week12_1 {
 
         // Proses input
         System.out.print("Input kalimat yang ingin di cek apakah palindrome atau tidak: ");
-        String s = input.nextLine();
+        String s = input.nextLine().toUpperCase();
 
         // String r diberi string kosong ("") agar tidak error
         StringBuilder build = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = s.length() - 1; i >= 0; i--) {
             build.append(s.charAt(i));
         }
         String r = build.toString();
