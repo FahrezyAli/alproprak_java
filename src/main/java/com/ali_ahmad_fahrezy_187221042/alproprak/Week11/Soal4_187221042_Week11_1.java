@@ -51,6 +51,7 @@ public class Soal4_187221042_Week11_1  {
             }
         }
 
+        //Konversi string menjadi kebalikannya
         String sp = stg + sib + sth;
         StringBuilder build = new StringBuilder();
         for (int i = sp.length() - 1; i >= 0; i--) {
