@@ -33,7 +33,7 @@ public class Soal4_187221042_Week14_1 {
      * <li><b>sum</b> Jumlah faktor faktor</li>
      * </ul>
      *
-     * @return
+     * @return Jumlah faktor faktor
      */
     public static int sumFactor(int n, int i) {
 

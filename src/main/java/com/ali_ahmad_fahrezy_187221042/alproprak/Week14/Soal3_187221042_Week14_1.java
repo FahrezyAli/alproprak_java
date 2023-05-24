@@ -36,7 +36,7 @@ public class Soal3_187221042_Week14_1 {
      *
      * @param n Input
      * @param i Looping
-     * @param r r List rekursif
+     * @param r List rekursif
      *
      * @return List faktor faktor dari suatu integer
      */

@@ -36,11 +36,14 @@ public class Soal2_187221042_Week14_1 {
      * @return String binari dari input
      */
     public static String convertBin(int n) {
-        // b: Nilai binari
+
         String b = "";
 
-        if (n > 0) {
-
+        if (n < 0) {
+            return "Nilai input harus positif";
+        } else if (n == 0) {
+            return "0";
+        } else {
             // Fungsi rekursif dengan cara memanggil kembali convertBin(n / 2), dan digabung dengan n % 2. Ini menggunakan rumus konversi desimal ke binari yaitu membagi 2 angka yang ingin dikonversi, dan jika ia habis maka nilai nya 0, dan jika tidak habis maka nilai nya 1, kemudian dilanjutkan dengan nilai n / 2 dan seterusnya sampai n bernilai 0
             b = convertBin(n / 2);
             b += n % 2;

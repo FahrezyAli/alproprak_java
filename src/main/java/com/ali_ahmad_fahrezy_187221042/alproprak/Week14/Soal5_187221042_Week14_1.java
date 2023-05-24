@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Program Soal 5 Minggu 14-1
  * @author  Ali Ahmad Fahrezy
- * @NIm     187221042
+ * @NIM     187221042
  *
  * @param n Nilai input
  */
@@ -36,8 +36,7 @@ public class Soal5_187221042_Week14_1 {
      * @return Total faktor
      */
     public static int numFactor(int n, int i) {
-        // i: Looping
-        // t: Total faktor
+
         int t;
 
         // n / 2 karena nilai faktor tertinggi selain nilai itu sendiri adalah nilai n / 2

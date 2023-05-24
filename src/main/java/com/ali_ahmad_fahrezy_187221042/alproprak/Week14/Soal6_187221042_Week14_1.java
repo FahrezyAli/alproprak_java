@@ -19,7 +19,7 @@ public class Soal6_187221042_Week14_1 {
 
         System.out.println("Soal Nomor 6 Minggu 14 \"List Faktor Prima Suatu Integer\"");
 
-        System.out.print("Input nilai integer yang ingin dicari faktornya: ");
+        System.out.print("Input nilai integer yang ingin dicari faktor prima nya: ");
         int n = input.nextInt();
 
         List<Integer> r = dispPrimeFactor(n, 1, new ArrayList<>());
