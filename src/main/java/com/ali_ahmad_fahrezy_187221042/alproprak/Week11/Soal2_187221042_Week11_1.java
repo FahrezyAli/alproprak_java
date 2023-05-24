@@ -20,7 +20,9 @@ public class Soal2_187221042_Week11_1 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
+
         System.out.println("Soal Nomor 2 Minggu 11 \"Kondisi kesehatan bebek\"");
+
         double[] b = new double[10];
 
         int k = 0;
